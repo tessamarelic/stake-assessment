@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: 'investments',
     loadChildren: () => import('./components/invest/invest.module').then(m => m.InvestModule)
