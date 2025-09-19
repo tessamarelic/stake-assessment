@@ -1,0 +1,59 @@
+<ion-content>
+  <ion-header class="ion-padding">
+    <ion-title size="large">Investments</ion-title>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngFor="let card of cards">
+        <app-card 
+          [title]="card.title" 
+          [subtitle]="card.subtitle" 
+          [icon]="card.icon" 
+          [amount]="card.amount" 
+          [percentage]="card.percentage" 
+          [isPositive]="card.isPositive">
+        </app-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="types-container ion-padding-horizontal">
+    <div *ngFor="let type of types; let i = index" (click)="selectType(i)">
+      <app-type [name]="type.name" [selected]="type.selected"></app-type>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Your Investments</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let instrument of instruments" lines="full">
+      <app-instrument
+        [name]="instrument.name"
+        [symbol]="instrument.symbol"
+        [price]="instrument.price"
+        [change]="instrument.change"
+        [isPositive]="instrument.isPositive"
+        [image]="instrument.image">
+      </app-instrument>
+    </ion-item>
+  </ion-list>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="investments" selected>
+            <ion-icon name="wallet-outline"></ion-icon>
+            <ion-label>Investments</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="discover" routerLink="/discover">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-label>Discover</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

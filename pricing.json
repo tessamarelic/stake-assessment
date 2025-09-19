@@ -1,0 +1,902 @@
+[
+  {
+    "id": "4a96e835-fd0c-46c9-9143-57a34e882d2a",
+    "symbol": "AAPL",
+    "open": 1132.57,
+    "close": 1126.33,
+    "ask": 1128.0,
+    "high": 1139.29,
+    "low": 1072.85
+  },
+  {
+    "id": "23ea04ce-64e0-4915-8486-836a9a3c6b13",
+    "symbol": "MSFT",
+    "open": 841.42,
+    "close": 843.51,
+    "ask": 843.66,
+    "high": 872.01,
+    "low": 839.23
+  },
+  {
+    "id": "10e97101-4904-4bd3-854c-603c2cf179ed",
+    "symbol": "GOOGL",
+    "open": 1258.39,
+    "close": 1241.4,
+    "ask": 1243.68,
+    "high": 1317.76,
+    "low": 1184.48
+  },
+  {
+    "id": "79165f70-65b1-45ca-a048-a156a70d7ff3",
+    "symbol": "AMZN",
+    "open": 1456.21,
+    "close": 1454.31,
+    "ask": 1455.24,
+    "high": 1468.89,
+    "low": 1445.35
+  },
+  {
+    "id": "8a5e811e-f9b5-41da-b67c-3ddb11c8f4ee",
+    "symbol": "META",
+    "open": 323.68,
+    "close": 323.99,
+    "ask": 324.24,
+    "high": 328.61,
+    "low": 320.51
+  },
+  {
+    "id": "3f0ac67e-0ae7-447e-ab2d-115e084e0551",
+    "symbol": "TSLA",
+    "open": 1263.61,
+    "close": 1264.27,
+    "ask": 1267.01,
+    "high": 1273.39,
+    "low": 1134.51
+  },
+  {
+    "id": "aaac5ba5-f43a-4b68-9327-7fb1114c8ed7",
+    "symbol": "NVDA",
+    "open": 810.67,
+    "close": 818.9,
+    "ask": 821.27,
+    "high": 824.89,
+    "low": 799.61
+  },
+  {
+    "id": "79b799d2-9d30-490e-adb4-493f30ba330d",
+    "symbol": "NFLX",
+    "open": 458.13,
+    "close": 465.07,
+    "ask": 465.3,
+    "high": 474.86,
+    "low": 447.92
+  },
+  {
+    "id": "5c677a61-34fb-4d7e-a200-933e046b4271",
+    "symbol": "ADBE",
+    "open": 131.51,
+    "close": 137.25,
+    "ask": 137.38,
+    "high": 139.08,
+    "low": 127.56
+  },
+  {
+    "id": "d0941ee1-e4c4-455e-b179-9e7cd06c0d82",
+    "symbol": "CRM",
+    "open": 1278.74,
+    "close": 1300.74,
+    "ask": 1301.19,
+    "high": 1331.16,
+    "low": 1246.78
+  },
+  {
+    "id": "ab024eb2-be67-4e86-9ea0-43cbc0f332a5",
+    "symbol": "ORCL",
+    "open": 332.17,
+    "close": 324.42,
+    "ask": 324.55,
+    "high": 333.75,
+    "low": 311.53
+  },
+  {
+    "id": "5f55ec3b-d8b2-49c2-af72-72e25e93f070",
+    "symbol": "INTC",
+    "open": 1009.94,
+    "close": 1006.01,
+    "ask": 1006.47,
+    "high": 1016.48,
+    "low": 1001.6
+  },
+  {
+    "id": "7270db19-777b-478b-8ed5-9518fee7be47",
+    "symbol": "AMD",
+    "open": 745.77,
+    "close": 721.51,
+    "ask": 721.93,
+    "high": 758.13,
+    "low": 713.73
+  },
+  {
+    "id": "87090386-283b-411d-9eec-35dad090fba7",
+    "symbol": "CSCO",
+    "open": 962.59,
+    "close": 945.55,
+    "ask": 946.43,
+    "high": 978.57,
+    "low": 922.97
+  },
+  {
+    "id": "1aa240f4-04c5-4a4b-9b35-38721a2e4f21",
+    "symbol": "AVGO",
+    "open": 908.98,
+    "close": 902.97,
+    "ask": 903.8,
+    "high": 992.83,
+    "low": 901.57
+  },
+  {
+    "id": "43074d69-e37d-4e8e-84c9-d21cdab832b1",
+    "symbol": "QCOM",
+    "open": 164.92,
+    "close": 163.85,
+    "ask": 164.17,
+    "high": 166.54,
+    "low": 162.02
+  },
+  {
+    "id": "8c4c9a13-70ed-4cb7-aea6-abc10fb1ad0f",
+    "symbol": "TXN",
+    "open": 1186.03,
+    "close": 1181.74,
+    "ask": 1182.43,
+    "high": 1210.49,
+    "low": 1155.93
+  },
+  {
+    "id": "362f1582-2d8e-4c5d-94fc-7a08d3482699",
+    "symbol": "SHOP",
+    "open": 402.5,
+    "close": 419.76,
+    "ask": 420.92,
+    "high": 423.84,
+    "low": 402.5
+  },
+  {
+    "id": "84f30290-1174-4f4a-9ec5-7bb111793ef5",
+    "symbol": "UBER",
+    "open": 1336.57,
+    "close": 1271.76,
+    "ask": 1275.26,
+    "high": 1342.74,
+    "low": 1194.22
+  },
+  {
+    "id": "3454d513-3ff0-4f88-8f23-8d190c961d4c",
+    "symbol": "LYFT",
+    "open": 551.11,
+    "close": 574.06,
+    "ask": 574.18,
+    "high": 586.97,
+    "low": 534.05
+  },
+  {
+    "id": "f5bcae80-e2f8-434a-ba68-702725457a35",
+    "symbol": "ABNB",
+    "open": 920.24,
+    "close": 936.48,
+    "ask": 938.38,
+    "high": 961.78,
+    "low": 911.5
+  },
+  {
+    "id": "43f43631-2c51-4ec7-bfba-efa763f32985",
+    "symbol": "SNOW",
+    "open": 1482.85,
+    "close": 1409.86,
+    "ask": 1410.82,
+    "high": 1507.96,
+    "low": 1391.46
+  },
+  {
+    "id": "c92934e2-15b4-4eb8-8d55-d5a3641934fb",
+    "symbol": "NET",
+    "open": 674.87,
+    "close": 659.79,
+    "ask": 660.42,
+    "high": 676.73,
+    "low": 639.37
+  },
+  {
+    "id": "39189721-a74c-4002-9893-478e8fbb8084",
+    "symbol": "DOCU",
+    "open": 1473.97,
+    "close": 1574.12,
+    "ask": 1574.25,
+    "high": 1574.8,
+    "low": 1415.56
+  },
+  {
+    "id": "07a2e1d5-7d9a-4f9a-97c3-935dd8ab56d2",
+    "symbol": "OKTA",
+    "open": 311.21,
+    "close": 344.05,
+    "ask": 344.48,
+    "high": 345.84,
+    "low": 310.24
+  },
+  {
+    "id": "04963a79-0536-4603-b314-34a0ffd0520f",
+    "symbol": "ZS",
+    "open": 65.78,
+    "close": 65.9,
+    "ask": 66.11,
+    "high": 68.69,
+    "low": 63.55
+  },
+  {
+    "id": "4e507518-7194-4c16-8e33-f37d0d6b70d4",
+    "symbol": "PANW",
+    "open": 1448.62,
+    "close": 1439.82,
+    "ask": 1443.18,
+    "high": 1449.12,
+    "low": 1420.64
+  },
+  {
+    "id": "f46dd949-146e-4f72-a68e-5381b89104a9",
+    "symbol": "CRWD",
+    "open": 336.86,
+    "close": 337.87,
+    "ask": 338.72,
+    "high": 359.5,
+    "low": 332.42
+  },
+  {
+    "id": "c52b32ff-5f84-4a50-a368-ab594d0266ae",
+    "symbol": "MDB",
+    "open": 340.17,
+    "close": 320.07,
+    "ask": 320.59,
+    "high": 344.2,
+    "low": 311.2
+  },
+  {
+    "id": "d9185b6b-a1c7-4c66-b3c4-0559b7eac278",
+    "symbol": "DDOG",
+    "open": 1137.23,
+    "close": 1061.86,
+    "ask": 1064.09,
+    "high": 1150.13,
+    "low": 1046.87
+  },
+  {
+    "id": "cb189ae1-6df5-4020-a4c3-eb5a0f1ee143",
+    "symbol": "PLTR",
+    "open": 1173.77,
+    "close": 1169.97,
+    "ask": 1171.8,
+    "high": 1196.11,
+    "low": 1168.21
+  },
+  {
+    "id": "e787773e-1e17-4c56-9cd5-672092271ffc",
+    "symbol": "SQ",
+    "open": 143.5,
+    "close": 138.52,
+    "ask": 138.63,
+    "high": 147.45,
+    "low": 133.49
+  },
+  {
+    "id": "abd3bd69-a411-4e26-9d2a-0eef35cf1a9b",
+    "symbol": "PYPL",
+    "open": 364.57,
+    "close": 364.68,
+    "ask": 365.0,
+    "high": 375.25,
+    "low": 359.61
+  },
+  {
+    "id": "f02d4b38-9316-45ff-a37c-db92eb705be8",
+    "symbol": "COIN",
+    "open": 141.78,
+    "close": 134.41,
+    "ask": 134.55,
+    "high": 145.41,
+    "low": 130.37
+  },
+  {
+    "id": "a4db3237-92e5-4304-ae08-46ac7f4b1a5a",
+    "symbol": "ROKU",
+    "open": 1337.58,
+    "close": 1294.85,
+    "ask": 1296.32,
+    "high": 1384.12,
+    "low": 1276.66
+  },
+  {
+    "id": "5335920a-ca9d-4e29-a429-707ca0232a77",
+    "symbol": "SPOT",
+    "open": 285.55,
+    "close": 283.72,
+    "ask": 284.41,
+    "high": 300.91,
+    "low": 275.99
+  },
+  {
+    "id": "78f08886-9afe-40bf-b978-987da545d5f0",
+    "symbol": "SE",
+    "open": 659.56,
+    "close": 674.75,
+    "ask": 675.54,
+    "high": 712.37,
+    "low": 651.83
+  },
+  {
+    "id": "81ee6d86-dea8-4c61-bed2-1dd44c6702ea",
+    "symbol": "BABA",
+    "open": 834.99,
+    "close": 823.66,
+    "ask": 824.13,
+    "high": 891.53,
+    "low": 816.09
+  },
+  {
+    "id": "158dc251-6394-45bf-bcf5-5cb0181a2b24",
+    "symbol": "PDD",
+    "open": 997.06,
+    "close": 1012.09,
+    "ask": 1014.14,
+    "high": 1016.46,
+    "low": 952.02
+  },
+  {
+    "id": "89f5b341-9ace-44bd-8fd9-2c969533e33d",
+    "symbol": "JD",
+    "open": 595.63,
+    "close": 569.77,
+    "ask": 571.37,
+    "high": 604.69,
+    "low": 565.79
+  },
+  {
+    "id": "4edddccf-2576-4f80-a5b3-ec9b05bc326e",
+    "symbol": "BIDU",
+    "open": 1107.22,
+    "close": 1021.05,
+    "ask": 1022.95,
+    "high": 1112.39,
+    "low": 1015.69
+  },
+  {
+    "id": "7db2b465-6968-42c7-843b-0fa3440d1141",
+    "symbol": "TWLO",
+    "open": 1028.04,
+    "close": 1059.38,
+    "ask": 1060.18,
+    "high": 1067.72,
+    "low": 1020.8
+  },
+  {
+    "id": "66394f82-a82e-4e0e-a93d-d9ffd34f6fce",
+    "symbol": "TEAM",
+    "open": 1468.07,
+    "close": 1464.44,
+    "ask": 1464.6,
+    "high": 1486.55,
+    "low": 1409.15
+  },
+  {
+    "id": "1a085bdd-58af-4ab6-8721-24c18030e868",
+    "symbol": "NOW",
+    "open": 606.7,
+    "close": 592.46,
+    "ask": 593.73,
+    "high": 619.78,
+    "low": 584.14
+  },
+  {
+    "id": "1b9dc47d-2ca1-40c0-9bf8-b295006a768f",
+    "symbol": "WDAY",
+    "open": 873.63,
+    "close": 867.71,
+    "ask": 869.38,
+    "high": 901.4,
+    "low": 867.66
+  },
+  {
+    "id": "1df1aded-0d78-49ec-8d36-978dd058bc75",
+    "symbol": "INTU",
+    "open": 329.47,
+    "close": 328.18,
+    "ask": 328.2,
+    "high": 348.26,
+    "low": 327.14
+  },
+  {
+    "id": "f00e71bc-9462-4ae0-bdb1-d5b208708e87",
+    "symbol": "MU",
+    "open": 427.6,
+    "close": 415.3,
+    "ask": 416.14,
+    "high": 439.5,
+    "low": 414.64
+  },
+  {
+    "id": "e2e212e5-68ce-4b22-aa1e-bfe7545f1180",
+    "symbol": "SONY",
+    "open": 883.44,
+    "close": 899.42,
+    "ask": 901.94,
+    "high": 916.64,
+    "low": 827.7
+  },
+  {
+    "id": "e8d98ac7-85c6-41ee-a56a-badbacd2a2d8",
+    "symbol": "TTD",
+    "open": 1103.98,
+    "close": 1117.73,
+    "ask": 1119.53,
+    "high": 1122.82,
+    "low": 1078.4
+  },
+  {
+    "id": "916ef9e8-ef53-46e4-a369-bad20fd07654",
+    "symbol": "TTWO",
+    "open": 1492.62,
+    "close": 1463.11,
+    "ask": 1466.13,
+    "high": 1550.24,
+    "low": 1448.3
+  },
+  {
+    "id": "a83574b1-8f85-485d-b2d1-e47c4aa5e63d",
+    "symbol": "EA",
+    "open": 1323.56,
+    "close": 1237.96,
+    "ask": 1238.96,
+    "high": 1331.29,
+    "low": 1210.49
+  },
+  {
+    "id": "aea1be03-c408-457c-9218-c2ec2e78080f",
+    "symbol": "ZM",
+    "open": 473.21,
+    "close": 456.48,
+    "ask": 457.45,
+    "high": 489.64,
+    "low": 452.32
+  },
+  {
+    "id": "f501859c-ffa5-41e2-9713-d53f7ea0bc6a",
+    "symbol": "SAP",
+    "open": 901.95,
+    "close": 895.93,
+    "ask": 898.3,
+    "high": 902.02,
+    "low": 853.5
+  },
+  {
+    "id": "e359c481-5cfc-4128-a968-1b91b45af702",
+    "symbol": "NKE",
+    "open": 339.41,
+    "close": 355.98,
+    "ask": 356.52,
+    "high": 359.31,
+    "low": 328.31
+  },
+  {
+    "id": "296f1cbf-3877-44dc-be13-4c0c8912a415",
+    "symbol": "SBUX",
+    "open": 1264.53,
+    "close": 1250.43,
+    "ask": 1254.1,
+    "high": 1264.6,
+    "low": 1233.92
+  },
+  {
+    "id": "6941b676-f757-4a69-a163-a61ecca1f6c3",
+    "symbol": "MCD",
+    "open": 660.57,
+    "close": 674.27,
+    "ask": 676.3,
+    "high": 675.04,
+    "low": 659.96
+  },
+  {
+    "id": "53dc7adf-c244-4878-aa0b-0609598453df",
+    "symbol": "DIS",
+    "open": 195.65,
+    "close": 191.63,
+    "ask": 191.73,
+    "high": 196.25,
+    "low": 191.13
+  },
+  {
+    "id": "a9e88bc5-c895-4c5e-9f99-49a5d7093c85",
+    "symbol": "WMT",
+    "open": 396.78,
+    "close": 390.6,
+    "ask": 391.42,
+    "high": 417.15,
+    "low": 389.95
+  },
+  {
+    "id": "25877285-d81e-40d3-926b-58999e84e106",
+    "symbol": "COST",
+    "open": 1329.1,
+    "close": 1301.94,
+    "ask": 1304.39,
+    "high": 1333.67,
+    "low": 1282.53
+  },
+  {
+    "id": "498c2640-af18-49d0-b5b5-c4b96a29241b",
+    "symbol": "TGT",
+    "open": 274.5,
+    "close": 286.54,
+    "ask": 287.3,
+    "high": 286.68,
+    "low": 268.44
+  },
+  {
+    "id": "d376cebd-cb40-4e0f-a3ee-5318d51d4e38",
+    "symbol": "HD",
+    "open": 440.43,
+    "close": 411.45,
+    "ask": 411.83,
+    "high": 442.54,
+    "low": 406.74
+  },
+  {
+    "id": "732f32c9-db87-4f44-aa6c-adb3d24191ba",
+    "symbol": "LOW",
+    "open": 730.97,
+    "close": 725.49,
+    "ask": 726.17,
+    "high": 737.08,
+    "low": 723.58
+  },
+  {
+    "id": "36de46e4-b136-4610-9e91-74e069a2edc1",
+    "symbol": "PG",
+    "open": 844.78,
+    "close": 834.81,
+    "ask": 836.98,
+    "high": 854.16,
+    "low": 828.64
+  },
+  {
+    "id": "42aff175-c0ca-4dcd-8735-8ae775a9794a",
+    "symbol": "KO",
+    "open": 352.8,
+    "close": 366.42,
+    "ask": 366.96,
+    "high": 368.8,
+    "low": 335.06
+  },
+  {
+    "id": "78b18973-da2c-49f5-9c22-2accd3cabb35",
+    "symbol": "PEP",
+    "open": 391.51,
+    "close": 391.5,
+    "ask": 392.54,
+    "high": 395.56,
+    "low": 382.92
+  },
+  {
+    "id": "0261983b-639e-4ccb-b0ba-04987f7bd2f8",
+    "symbol": "JNJ",
+    "open": 440.5,
+    "close": 443.55,
+    "ask": 443.72,
+    "high": 457.55,
+    "low": 436.97
+  },
+  {
+    "id": "eb32ca80-0438-4ae4-92fa-2f4c49387b40",
+    "symbol": "PFE",
+    "open": 1343.46,
+    "close": 1408.78,
+    "ask": 1409.61,
+    "high": 1430.96,
+    "low": 1320.3
+  },
+  {
+    "id": "e00e75a2-74c8-41d5-9f67-64237763011c",
+    "symbol": "MRNA",
+    "open": 358.39,
+    "close": 353.09,
+    "ask": 354.14,
+    "high": 359.17,
+    "low": 346.11
+  },
+  {
+    "id": "4988cead-2097-4872-80ec-dc023bcccbe1",
+    "symbol": "LLY",
+    "open": 1068.89,
+    "close": 1064.7,
+    "ask": 1064.82,
+    "high": 1078.97,
+    "low": 1055.33
+  },
+  {
+    "id": "31b72540-c31d-4265-9d0f-6e54459e577d",
+    "symbol": "ABBV",
+    "open": 1010.55,
+    "close": 1024.38,
+    "ask": 1025.99,
+    "high": 1059.47,
+    "low": 966.53
+  },
+  {
+    "id": "8ba2a978-a3f0-4757-8e07-51ae91945e6a",
+    "symbol": "BMY",
+    "open": 1101.97,
+    "close": 1094.75,
+    "ask": 1097.12,
+    "high": 1121.23,
+    "low": 1068.63
+  },
+  {
+    "id": "d1fd6d89-3984-4fe4-b920-290e129e4d06",
+    "symbol": "UNH",
+    "open": 345.7,
+    "close": 344.93,
+    "ask": 345.61,
+    "high": 347.33,
+    "low": 328.43
+  },
+  {
+    "id": "effbbc30-ba74-4792-843f-179cf88b7dfa",
+    "symbol": "CVS",
+    "open": 1251.9,
+    "close": 1245.0,
+    "ask": 1248.76,
+    "high": 1259.93,
+    "low": 1193.97
+  },
+  {
+    "id": "a1f0296a-075e-4aac-b8f7-e9c871edb3c0",
+    "symbol": "TMO",
+    "open": 1201.42,
+    "close": 1204.43,
+    "ask": 1207.46,
+    "high": 1213.59,
+    "low": 1190.17
+  },
+  {
+    "id": "a6649431-d40e-4b60-a291-1ecca8c5a912",
+    "symbol": "DHR",
+    "open": 965.38,
+    "close": 957.98,
+    "ask": 959.16,
+    "high": 989.24,
+    "low": 925.28
+  },
+  {
+    "id": "febcf159-ad24-40dd-b23b-9415458a2fdf",
+    "symbol": "GE",
+    "open": 362.56,
+    "close": 343.28,
+    "ask": 344.29,
+    "high": 362.97,
+    "low": 342.89
+  },
+  {
+    "id": "65af9d48-a6b7-4c9c-a8ad-f05a81eac17e",
+    "symbol": "BA",
+    "open": 945.04,
+    "close": 956.36,
+    "ask": 956.95,
+    "high": 979.97,
+    "low": 927.43
+  },
+  {
+    "id": "6e094583-596d-4c84-a452-dcdc3431762b",
+    "symbol": "LMT",
+    "open": 171.57,
+    "close": 172.45,
+    "ask": 172.53,
+    "high": 173.66,
+    "low": 170.12
+  },
+  {
+    "id": "e0e30a7f-ec21-48ec-889a-fcc15ec1cf75",
+    "symbol": "NOC",
+    "open": 637.03,
+    "close": 634.5,
+    "ask": 635.79,
+    "high": 650.43,
+    "low": 585.39
+  },
+  {
+    "id": "68af4ebe-c001-4d23-9d93-7fef21268d27",
+    "symbol": "RTX",
+    "open": 916.1,
+    "close": 957.88,
+    "ask": 960.26,
+    "high": 975.67,
+    "low": 890.15
+  },
+  {
+    "id": "aed4ebf2-6330-4b9a-ab24-ebc4012645f7",
+    "symbol": "CAT",
+    "open": 1381.6,
+    "close": 1495.67,
+    "ask": 1495.81,
+    "high": 1498.03,
+    "low": 1371.17
+  },
+  {
+    "id": "350c463c-ef79-461b-85eb-811dc74be16f",
+    "symbol": "DE",
+    "open": 550.25,
+    "close": 550.36,
+    "ask": 551.53,
+    "high": 558.8,
+    "low": 543.28
+  },
+  {
+    "id": "007dea9d-e57b-4ea9-bf36-4d91b7837fb8",
+    "symbol": "GM",
+    "open": 357.4,
+    "close": 366.91,
+    "ask": 366.95,
+    "high": 371.23,
+    "low": 336.05
+  },
+  {
+    "id": "bdfdd405-9d97-415c-84f4-c2c6895ad506",
+    "symbol": "F",
+    "open": 437.78,
+    "close": 443.28,
+    "ask": 443.94,
+    "high": 477.21,
+    "low": 431.19
+  },
+  {
+    "id": "3d7fbb61-f60b-4cb7-b03c-7d8f47dd18ae",
+    "symbol": "RIVN",
+    "open": 331.23,
+    "close": 339.51,
+    "ask": 340.26,
+    "high": 343.35,
+    "low": 330.77
+  },
+  {
+    "id": "09e89ffb-61b2-4a9f-8dad-51f8dea659db",
+    "symbol": "LCID",
+    "open": 416.91,
+    "close": 426.0,
+    "ask": 426.36,
+    "high": 429.24,
+    "low": 402.54
+  },
+  {
+    "id": "fffba515-59fb-4b78-91c3-bc87a10b9c93",
+    "symbol": "XOM",
+    "open": 893.43,
+    "close": 881.73,
+    "ask": 883.86,
+    "high": 929.17,
+    "low": 876.65
+  },
+  {
+    "id": "b04325cf-0654-4d5d-a3c4-36fb9e1b2ef8",
+    "symbol": "CVX",
+    "open": 1249.6,
+    "close": 1232.02,
+    "ask": 1232.19,
+    "high": 1267.98,
+    "low": 1218.36
+  },
+  {
+    "id": "86f96a6a-dee2-4f79-8979-3de9ec9d0285",
+    "symbol": "COP",
+    "open": 1216.69,
+    "close": 1271.87,
+    "ask": 1275.36,
+    "high": 1312.06,
+    "low": 1204.12
+  },
+  {
+    "id": "795bd607-657e-4a8d-b81e-b5156a784c16",
+    "symbol": "BP",
+    "open": 1070.11,
+    "close": 1011.76,
+    "ask": 1013.46,
+    "high": 1085.21,
+    "low": 993.21
+  },
+  {
+    "id": "51813c42-afd2-43c8-98d1-6fa7d2adebc0",
+    "symbol": "SHEL",
+    "open": 160.24,
+    "close": 155.26,
+    "ask": 155.65,
+    "high": 160.97,
+    "low": 151.39
+  },
+  {
+    "id": "dc4852fc-07de-4798-ba32-c8348a0a6b53",
+    "symbol": "ENPH",
+    "open": 89.84,
+    "close": 86.6,
+    "ask": 86.76,
+    "high": 93.2,
+    "low": 83.46
+  },
+  {
+    "id": "b0e4a9f8-1a30-4cab-b79a-b3544086de92",
+    "symbol": "SEDG",
+    "open": 63.72,
+    "close": 64.18,
+    "ask": 64.26,
+    "high": 66.5,
+    "low": 60.8
+  },
+  {
+    "id": "aa22806e-0500-462b-924a-0ad6dfd1796e",
+    "symbol": "NEE",
+    "open": 182.21,
+    "close": 180.72,
+    "ask": 181.22,
+    "high": 182.86,
+    "low": 180.38
+  },
+  {
+    "id": "25e73065-24ae-48f1-aed4-3c7121aa71bc",
+    "symbol": "DUK",
+    "open": 177.75,
+    "close": 179.63,
+    "ask": 180.16,
+    "high": 181.19,
+    "low": 174.95
+  },
+  {
+    "id": "5cf2d56d-4ab5-41fa-8f3a-0f2acf4a0b42",
+    "symbol": "SO",
+    "open": 1303.8,
+    "close": 1254.01,
+    "ask": 1255.42,
+    "high": 1347.73,
+    "low": 1238.33
+  },
+  {
+    "id": "6c15a278-0823-4ee8-bb84-4a96579712f1",
+    "symbol": "T",
+    "open": 211.48,
+    "close": 216.9,
+    "ask": 217.18,
+    "high": 218.1,
+    "low": 199.0
+  },
+  {
+    "id": "3fe85e33-2c90-4829-bd4d-f9f666f8c356",
+    "symbol": "VZ",
+    "open": 409.95,
+    "close": 424.6,
+    "ask": 424.91,
+    "high": 427.77,
+    "low": 405.11
+  },
+  {
+    "id": "96913f9e-ed9c-4aef-b108-2747523f9ccd",
+    "symbol": "TMUS",
+    "open": 1157.91,
+    "close": 1140.43,
+    "ask": 1140.99,
+    "high": 1177.06,
+    "low": 1111.02
+  },
+  {
+    "id": "f4f8ec72-713e-4ecc-836c-c896f1d10c25",
+    "symbol": "V",
+    "open": 668.57,
+    "close": 685.06,
+    "ask": 685.35,
+    "high": 690.48,
+    "low": 627.98
+  }
+]

@@ -1,0 +1,53 @@
+ion-card {
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  margin-right: 12px;
+  
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-amount {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+}
+
+.percentage {
+  font-size: 14px;
+  margin-left: 4px;
+  
+  &.positive {
+    color: #4CAF50;
+  }
+  
+  &.negative {
+    color: #F44336;
+  }
+}

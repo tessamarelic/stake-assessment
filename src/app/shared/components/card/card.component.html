@@ -1,0 +1,19 @@
+<ion-card>
+  <ion-card-content>
+    <div class="card-content">
+      <div class="card-icon" *ngIf="icon">
+        <img [src]="'assets/' + icon" alt="Icon">
+      </div>
+      <div class="card-info">
+        <div class="card-title">{{title}}</div>
+        <div class="card-subtitle" *ngIf="subtitle">{{subtitle}}</div>
+      </div>
+      <div class="card-amount" *ngIf="amount">
+        {{amount}}
+        <span class="percentage" [ngClass]="{'positive': isPositive, 'negative': !isPositive}" *ngIf="percentage">
+          {{isPositive ? '+' : ''}}{{percentage}}
+        </span>
+      </div>
+    </div>
+  </ion-card-content>
+</ion-card>

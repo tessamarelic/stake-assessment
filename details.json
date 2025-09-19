@@ -1,0 +1,902 @@
+[
+  {
+    "id": "2a5f18cf-1c8f-4625-b020-f843f4f9f056",
+    "symbol": "AAPL",
+    "type": "etf",
+    "fullName": "Apple Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png?v8",
+    "volume": 87778092,
+    "marketCap": 262798555876
+  },
+  {
+    "id": "28102e7c-04ac-4285-8f42-7cdd4b40fda3",
+    "symbol": "MSFT",
+    "type": "stock",
+    "fullName": "Microsoft Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8",
+    "volume": 6575998,
+    "marketCap": 278457062908
+  },
+  {
+    "id": "de425116-3e0c-4354-84bc-2bd0dfb7dedb",
+    "symbol": "GOOGL",
+    "type": "etf",
+    "fullName": "Alphabet Inc. Class A",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50d.png?v8",
+    "volume": 19046094,
+    "marketCap": 237872542592
+  },
+  {
+    "id": "f8aac709-a71a-4b52-a694-f77871c2715a",
+    "symbol": "AMZN",
+    "type": "stock",
+    "fullName": "Amazon.com, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f6d2.png?v8",
+    "volume": 15717932,
+    "marketCap": 168554117285
+  },
+  {
+    "id": "97cd744e-78ef-419c-b7d6-ad15695d4583",
+    "symbol": "META",
+    "type": "etf",
+    "fullName": "Meta Platforms, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f310.png?v8",
+    "volume": 78204068,
+    "marketCap": 112540712990
+  },
+  {
+    "id": "cb83024b-53ec-4c77-af62-f9b020a66abc",
+    "symbol": "TSLA",
+    "type": "etf",
+    "fullName": "Tesla, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f697.png?v8",
+    "volume": 93897398,
+    "marketCap": 431042766252
+  },
+  {
+    "id": "b65cdd6d-2b3e-48b5-9edf-bb66e9a817c3",
+    "symbol": "NVDA",
+    "type": "etf",
+    "fullName": "NVIDIA Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f5a5.png?v8",
+    "volume": 95477396,
+    "marketCap": 41974577519
+  },
+  {
+    "id": "e1b39f22-c183-4795-a315-fdedf8bddba5",
+    "symbol": "NFLX",
+    "type": "stock",
+    "fullName": "Netflix, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a5.png?v8",
+    "volume": 14496561,
+    "marketCap": 1872881026241
+  },
+  {
+    "id": "1a3e1889-1be9-4062-8580-22b6f93bdbd3",
+    "symbol": "ADBE",
+    "type": "otc",
+    "fullName": "Adobe Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 383360,
+    "marketCap": 1916388317
+  },
+  {
+    "id": "dcd6cfed-72dd-48f0-a218-66c7023d2ff2",
+    "symbol": "CRM",
+    "type": "stock",
+    "fullName": "Salesforce, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3d7.png?v8",
+    "volume": 10125148,
+    "marketCap": 1641754684080
+  },
+  {
+    "id": "8dfcb17f-57cb-4ace-805e-0e70eeb6b44a",
+    "symbol": "ORCL",
+    "type": "stock",
+    "fullName": "Oracle Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 7727995,
+    "marketCap": 1434945317427
+  },
+  {
+    "id": "d3dfe8be-eb81-47b1-a392-3cacc9bdfa10",
+    "symbol": "INTC",
+    "type": "etf",
+    "fullName": "Intel Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 95012444,
+    "marketCap": 454091459243
+  },
+  {
+    "id": "a00c77ee-f9ae-45cf-8913-869a02201125",
+    "symbol": "AMD",
+    "type": "stock",
+    "fullName": "Advanced Micro Devices, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 14002892,
+    "marketCap": 976473645414
+  },
+  {
+    "id": "c1eddf62-ffa3-4f0d-8d9a-f8d5960be292",
+    "symbol": "CSCO",
+    "type": "stock",
+    "fullName": "Cisco Systems, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50b.png?v8",
+    "volume": 18810029,
+    "marketCap": 168724337171
+  },
+  {
+    "id": "f404394a-24df-4055-a3c5-68b0a5f4724c",
+    "symbol": "AVGO",
+    "type": "stock",
+    "fullName": "Broadcom Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4c8.png?v8",
+    "volume": 9575800,
+    "marketCap": 413521649780
+  },
+  {
+    "id": "fd17ebe6-fe53-4e87-8b4b-14b3d2576d79",
+    "symbol": "QCOM",
+    "type": "etf",
+    "fullName": "QUALCOMM Incorporated",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 94701280,
+    "marketCap": 143041702306
+  },
+  {
+    "id": "fa080c8e-4b2e-485d-b439-70b8d27baab4",
+    "symbol": "TXN",
+    "type": "stock",
+    "fullName": "Texas Instruments Incorporated",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50b.png?v8",
+    "volume": 16892492,
+    "marketCap": 812054985453
+  },
+  {
+    "id": "9bd0ecb7-3b4c-48e9-87f6-7cd45cd07ec7",
+    "symbol": "SHOP",
+    "type": "otc",
+    "fullName": "Shopify Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 376902,
+    "marketCap": 3053924114
+  },
+  {
+    "id": "89736499-5ff5-4d3f-b154-e860c3acbc95",
+    "symbol": "UBER",
+    "type": "etf",
+    "fullName": "Uber Technologies, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 18142180,
+    "marketCap": 246387568416
+  },
+  {
+    "id": "4f2ff2f1-0bf9-42bd-b70b-5d51381efd1e",
+    "symbol": "LYFT",
+    "type": "stock",
+    "fullName": "Lyft, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "9c2f94d2-c85a-4c75-b283-9a647fdb0e1c",
+    "symbol": "ABNB",
+    "type": "stock",
+    "fullName": "Airbnb, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50b.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "b431fd96-9f06-45f8-a475-8e32a1bbd071",
+    "symbol": "SNOW",
+    "type": "stock",
+    "fullName": "Snowflake Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3d7.png?v8",
+    "volume": 2781701,
+    "marketCap": 105814853452
+  },
+  {
+    "id": "2f280ff3-0c7e-4a4a-8137-53a9a912067f",
+    "symbol": "NET",
+    "type": "etf",
+    "fullName": "Cloudflare, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 83290005,
+    "marketCap": 374607813402
+  },
+  {
+    "id": "880f9472-0ad2-4768-a206-6da540e523dd",
+    "symbol": "DOCU",
+    "type": "stock",
+    "fullName": "DocuSign, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 15603194,
+    "marketCap": 533470451495
+  },
+  {
+    "id": "d128ebf8-7ead-464c-900b-f48dd2b64ce5",
+    "symbol": "OKTA",
+    "type": "stock",
+    "fullName": "Okta, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+    "volume": 5209709,
+    "marketCap": 589448238773
+  },
+  {
+    "id": "abdc67f5-b3cc-4ef8-843e-991a20a53872",
+    "symbol": "ZS",
+    "type": "stock",
+    "fullName": "Zscaler, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 8940857,
+    "marketCap": 512021067631
+  },
+  {
+    "id": "a058d39a-b9fa-4b4a-ae20-5c4995c4b802",
+    "symbol": "PANW",
+    "type": "etf",
+    "fullName": "Palo Alto Networks, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8",
+    "volume": 30962822,
+    "marketCap": 360577807586
+  },
+  {
+    "id": "26a27586-e76a-4906-9507-f5a0beb2876a",
+    "symbol": "CRWD",
+    "type": "etf",
+    "fullName": "CrowdStrike Holdings, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3df.png?v8",
+    "volume": 39273251,
+    "marketCap": 386003664574
+  },
+  {
+    "id": "007bb736-c62c-4938-b4d3-012cd3176d4b",
+    "symbol": "MDB",
+    "type": "stock",
+    "fullName": "MongoDB, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+    "volume": 14065478,
+    "marketCap": 404391209714
+  },
+  {
+    "id": "596189ee-789c-4f75-9b01-f74d68137cd0",
+    "symbol": "DDOG",
+    "type": "stock",
+    "fullName": "Datadog, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "b5d70d32-3a77-40f2-b939-3945a3b20ab4",
+    "symbol": "PLTR",
+    "type": "stock",
+    "fullName": "Palantir Technologies Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png?v8",
+    "volume": 10705810,
+    "marketCap": 498614092997
+  },
+  {
+    "id": "59bbd232-9cdf-4847-ac3a-4daf33ce7597",
+    "symbol": "SQ",
+    "type": "etf",
+    "fullName": "Block, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8",
+    "volume": 25248453,
+    "marketCap": 440538790358
+  },
+  {
+    "id": "08d806f1-6b80-4c42-825d-8ca9d2adbcbe",
+    "symbol": "PYPL",
+    "type": "stock",
+    "fullName": "PayPal Holdings, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f30d.png?v8",
+    "volume": 6276404,
+    "marketCap": 1070572921212
+  },
+  {
+    "id": "4b848155-c46c-4746-85a8-4be9bc8c2d8f",
+    "symbol": "COIN",
+    "type": "etf",
+    "fullName": "Coinbase Global, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8",
+    "volume": 73561486,
+    "marketCap": 476702044214
+  },
+  {
+    "id": "c9038f72-2da2-422c-8296-6b7eb2986897",
+    "symbol": "ROKU",
+    "type": "stock",
+    "fullName": "Roku, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f30d.png?v8",
+    "volume": 15928048,
+    "marketCap": 1373095091819
+  },
+  {
+    "id": "957aac6d-3536-4371-ada8-51a931612023",
+    "symbol": "SPOT",
+    "type": "stock",
+    "fullName": "Spotify Technology S.A.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f48a.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "54ddb42d-710f-42cb-ad73-d3bc403d7770",
+    "symbol": "SE",
+    "type": "etf",
+    "fullName": "Sea Limited",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c0.png?v8",
+    "volume": 96956504,
+    "marketCap": 378138331351
+  },
+  {
+    "id": "c054de4c-0074-4085-bc72-33689717cef9",
+    "symbol": "BABA",
+    "type": "stock",
+    "fullName": "Alibaba Group Holding Limited",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f48a.png?v8",
+    "volume": 2738716,
+    "marketCap": 1445962741051
+  },
+  {
+    "id": "9ec24108-d837-43f3-926c-9198803e300c",
+    "symbol": "PDD",
+    "type": "stock",
+    "fullName": "PDD Holdings Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3e2.png?v8",
+    "volume": 16552455,
+    "marketCap": 1504291489518
+  },
+  {
+    "id": "9ae48b19-5b14-406f-8b09-328687241d9b",
+    "symbol": "JD",
+    "type": "stock",
+    "fullName": "JD.com, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c0.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "e39d78a7-dc2f-44f3-a949-03d22b3703da",
+    "symbol": "BIDU",
+    "type": "stock",
+    "fullName": "Baidu, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 9188199,
+    "marketCap": 1570790400237
+  },
+  {
+    "id": "cf0f87e5-4f6d-4a26-9d33-69573f6136ac",
+    "symbol": "TWLO",
+    "type": "stock",
+    "fullName": "Twilio Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ae.png?v8",
+    "volume": 18391886,
+    "marketCap": 584961649296
+  },
+  {
+    "id": "e3a2794e-ee8f-4751-8817-faed4289696b",
+    "symbol": "TEAM",
+    "type": "etf",
+    "fullName": "Atlassian Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 22902552,
+    "marketCap": 327696212873
+  },
+  {
+    "id": "7a336b31-04ef-43bf-b4b5-a1f4ce2e91d6",
+    "symbol": "NOW",
+    "type": "etf",
+    "fullName": "ServiceNow, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8",
+    "volume": 38895440,
+    "marketCap": 263417860440
+  },
+  {
+    "id": "802a2df4-bf16-4d94-b9c1-d226a467ae6b",
+    "symbol": "WDAY",
+    "type": "etf",
+    "fullName": "Workday, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 21269893,
+    "marketCap": 402382823629
+  },
+  {
+    "id": "a9c2e805-7b9a-49b7-b52a-97c2a39dcce7",
+    "symbol": "INTU",
+    "type": "stock",
+    "fullName": "Intuit Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4c8.png?v8",
+    "volume": 2411924,
+    "marketCap": 966820704234
+  },
+  {
+    "id": "39d5debf-71d4-40ea-83d9-e61884cc7c8f",
+    "symbol": "MU",
+    "type": "etf",
+    "fullName": "Micron Technology, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 12586805,
+    "marketCap": 73063342225
+  },
+  {
+    "id": "15c111cc-bb03-4583-93d5-e10e22d27a89",
+    "symbol": "SONY",
+    "type": "stock",
+    "fullName": "Sony Group Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 2072167,
+    "marketCap": 1402870197061
+  },
+  {
+    "id": "65bb819b-c0b1-455b-ab29-90ab3a5803f7",
+    "symbol": "TTD",
+    "type": "stock",
+    "fullName": "The Trade Desk, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50b.png?v8",
+    "volume": 19452732,
+    "marketCap": 890299734434
+  },
+  {
+    "id": "8e20cecc-7c64-458c-9af9-4ba902e84a02",
+    "symbol": "TTWO",
+    "type": "etf",
+    "fullName": "Take-Two Interactive Software, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3d7.png?v8",
+    "volume": 22972537,
+    "marketCap": 429057151626
+  },
+  {
+    "id": "a98f7dd8-0cc9-4b89-b03b-290001454055",
+    "symbol": "EA",
+    "type": "stock",
+    "fullName": "Electronic Arts Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png?v8",
+    "volume": 7393785,
+    "marketCap": 1773928297123
+  },
+  {
+    "id": "448d77e3-eaa9-4988-8d3d-58dfecd6a1b8",
+    "symbol": "ZM",
+    "type": "etf",
+    "fullName": "Zoom Video Communications, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 6369051,
+    "marketCap": 284573169597
+  },
+  {
+    "id": "9ef99169-44df-4d8f-b1db-4540e35e855a",
+    "symbol": "SAP",
+    "type": "stock",
+    "fullName": "SAP SE",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f30d.png?v8",
+    "volume": 17031447,
+    "marketCap": 1115753181957
+  },
+  {
+    "id": "cde9daed-e87f-44a9-bf2e-f21a9765d7a4",
+    "symbol": "NKE",
+    "type": "etf",
+    "fullName": "NIKE, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8",
+    "volume": 6157695,
+    "marketCap": 110214256527
+  },
+  {
+    "id": "b98c4e68-cea0-4948-a3bb-fe0cebd570cd",
+    "symbol": "SBUX",
+    "type": "etf",
+    "fullName": "Starbucks Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8",
+    "volume": 51098443,
+    "marketCap": 32981832330
+  },
+  {
+    "id": "63b5d9e9-4654-4c74-ade6-22aa74cc0d4a",
+    "symbol": "MCD",
+    "type": "otc",
+    "fullName": "McDonald's Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f354.png?v8",
+    "volume": 440992,
+    "marketCap": 3865984107
+  },
+  {
+    "id": "7c669ef0-5906-45a7-b949-bcf3f32f8f81",
+    "symbol": "DIS",
+    "type": "stock",
+    "fullName": "The Walt Disney Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ad.png?v8",
+    "volume": 8479937,
+    "marketCap": 1320602541687
+  },
+  {
+    "id": "013c3c54-e65e-4b3c-b597-36b857bbfba2",
+    "symbol": "WMT",
+    "type": "stock",
+    "fullName": "Walmart Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 17619372,
+    "marketCap": 1423779718195
+  },
+  {
+    "id": "071450b3-c1f4-4065-883c-d1fab68e7192",
+    "symbol": "COST",
+    "type": "stock",
+    "fullName": "Costco Wholesale Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+    "volume": 10177810,
+    "marketCap": 715995619959
+  },
+  {
+    "id": "c1a0a349-84cf-4df2-abe0-612d0102dca5",
+    "symbol": "TGT",
+    "type": "etf",
+    "fullName": "Target Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f30d.png?v8",
+    "volume": 61300617,
+    "marketCap": 321131703511
+  },
+  {
+    "id": "2b962b40-2a01-4f8e-a925-b141bc10b8b1",
+    "symbol": "HD",
+    "type": "etf",
+    "fullName": "The Home Depot, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50b.png?v8",
+    "volume": 40441233,
+    "marketCap": 232942805074
+  },
+  {
+    "id": "dad344bc-d650-4ff0-afd2-1fb49b0d8c06",
+    "symbol": "LOW",
+    "type": "stock",
+    "fullName": "Lowe's Companies, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 15990769,
+    "marketCap": 1418652002591
+  },
+  {
+    "id": "663c2cdd-f1be-4bcc-b866-b89f86cab383",
+    "symbol": "PG",
+    "type": "etf",
+    "fullName": "Procter & Gamble Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8",
+    "volume": 89677609,
+    "marketCap": 333159129855
+  },
+  {
+    "id": "03c8ee29-85d9-43b4-8ddb-c204e1b93914",
+    "symbol": "KO",
+    "type": "stock",
+    "fullName": "Coca-Cola Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f964.png?v8",
+    "volume": 18713247,
+    "marketCap": 643102439498
+  },
+  {
+    "id": "7a2107f2-10ed-4382-ad71-65e16f8cdf3f",
+    "symbol": "PEP",
+    "type": "etf",
+    "fullName": "PepsiCo, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f37b.png?v8",
+    "volume": 54385446,
+    "marketCap": 451636106368
+  },
+  {
+    "id": "a284903a-5234-4d86-ba47-f3ac18cf3eb5",
+    "symbol": "JNJ",
+    "type": "stock",
+    "fullName": "Johnson & Johnson",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png?v8",
+    "volume": 11475786,
+    "marketCap": 108107809003
+  },
+  {
+    "id": "31509f30-2559-44cb-af8c-31d58c0d577f",
+    "symbol": "PFE",
+    "type": "stock",
+    "fullName": "Pfizer Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8",
+    "volume": 18594058,
+    "marketCap": 1681113732527
+  },
+  {
+    "id": "04ca8fd1-9761-48aa-9af0-f87eed21bd89",
+    "symbol": "MRNA",
+    "type": "stock",
+    "fullName": "Moderna, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 1447179,
+    "marketCap": 295694266119
+  },
+  {
+    "id": "15a67b65-a527-4a75-8ddf-85c19eece498",
+    "symbol": "LLY",
+    "type": "stock",
+    "fullName": "Eli Lilly and Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png?v8",
+    "volume": 17537713,
+    "marketCap": 695802414438
+  },
+  {
+    "id": "66617b73-7d69-4b62-95f0-e845a134403e",
+    "symbol": "ABBV",
+    "type": "stock",
+    "fullName": "AbbVie Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8",
+    "volume": 8406636,
+    "marketCap": 163151710336
+  },
+  {
+    "id": "f6e50a08-6fed-4684-9028-f5db8ebdda4d",
+    "symbol": "BMY",
+    "type": "stock",
+    "fullName": "Bristol-Myers Squibb Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3e2.png?v8",
+    "volume": 4212692,
+    "marketCap": 26328038963
+  },
+  {
+    "id": "4c5eb9a8-97de-486e-b34b-5ec78747f994",
+    "symbol": "UNH",
+    "type": "otc",
+    "fullName": "UnitedHealth Group Incorporated",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8",
+    "volume": 148895,
+    "marketCap": 4943933047
+  },
+  {
+    "id": "d7956008-fea5-41ed-8361-7ca3710335c9",
+    "symbol": "CVS",
+    "type": "etf",
+    "fullName": "CVS Health Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a4.png?v8",
+    "volume": 62428274,
+    "marketCap": 286846408028
+  },
+  {
+    "id": "d1f552d0-738b-4979-b37c-e2800bf8a052",
+    "symbol": "TMO",
+    "type": "stock",
+    "fullName": "Thermo Fisher Scientific Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3df.png?v8",
+    "volume": 15367286,
+    "marketCap": 554769060249
+  },
+  {
+    "id": "540e03d6-82e4-48b5-8022-116657de2826",
+    "symbol": "DHR",
+    "type": "stock",
+    "fullName": "Danaher Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png?v8",
+    "volume": 3762068,
+    "marketCap": 1061571831376
+  },
+  {
+    "id": "2dcc3fde-af09-4289-8987-674159a09ab6",
+    "symbol": "GE",
+    "type": "etf",
+    "fullName": "GE Aerospace",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "2cd102e9-ba53-4243-9429-6aa79eb21277",
+    "symbol": "BA",
+    "type": "stock",
+    "fullName": "The Boeing Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f6eb.png?v8",
+    "volume": 16425487,
+    "marketCap": 1514534189350
+  },
+  {
+    "id": "94795605-e24e-4f41-87f3-bbb06147a417",
+    "symbol": "LMT",
+    "type": "stock",
+    "fullName": "Lockheed Martin Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+    "volume": 19401313,
+    "marketCap": 192871356804
+  },
+  {
+    "id": "9dc859a9-9bb1-4f71-8d2b-eaab84e44d2c",
+    "symbol": "NOC",
+    "type": "etf",
+    "fullName": "Northrop Grumman Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3e6.png?v8",
+    "volume": 20729957,
+    "marketCap": 230201963853
+  },
+  {
+    "id": "ce161748-b19d-464c-a6b3-6f70f55d6913",
+    "symbol": "RTX",
+    "type": "stock",
+    "fullName": "RTX Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png?v8",
+    "volume": 15601775,
+    "marketCap": 846176813211
+  },
+  {
+    "id": "946093bc-5ca7-45f3-bf61-8266c3e8efc9",
+    "symbol": "CAT",
+    "type": "etf",
+    "fullName": "Caterpillar Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ae.png?v8",
+    "volume": 74524830,
+    "marketCap": 76835195045
+  },
+  {
+    "id": "fe8b03f5-6e2d-4302-9e2c-3ab35a05ca57",
+    "symbol": "DE",
+    "type": "stock",
+    "fullName": "Deere & Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png?v8",
+    "volume": 5778133,
+    "marketCap": 854133301760
+  },
+  {
+    "id": "dc9bbe2a-7f64-4a56-a591-49269badd479",
+    "symbol": "GM",
+    "type": "otc",
+    "fullName": "General Motors Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f30d.png?v8",
+    "volume": 39364,
+    "marketCap": 3414094731
+  },
+  {
+    "id": "048c23c0-34ec-4e8d-a79e-629664ff6d01",
+    "symbol": "F",
+    "type": "etf",
+    "fullName": "Ford Motor Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png?v8",
+    "volume": 56921159,
+    "marketCap": 270111331515
+  },
+  {
+    "id": "ceed254e-3ed2-4993-83e4-e2d3d683b377",
+    "symbol": "RIVN",
+    "type": "etf",
+    "fullName": "Rivian Automotive, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ae.png?v8",
+    "volume": 91677052,
+    "marketCap": 80155915246
+  },
+  {
+    "id": "bc8d8330-4a9c-4e17-a71e-2a11cd8969fe",
+    "symbol": "LCID",
+    "type": "etf",
+    "fullName": "Lucid Group, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8",
+    "volume": 51065578,
+    "marketCap": 211901627661
+  },
+  {
+    "id": "773d7414-09ad-4d9d-88b8-6851df66847c",
+    "symbol": "XOM",
+    "type": "stock",
+    "fullName": "Exxon Mobil Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": 19150301,
+    "marketCap": 623063702866
+  },
+  {
+    "id": "0b12564f-6e37-4451-985a-89af8c6f6aeb",
+    "symbol": "CVX",
+    "type": "stock",
+    "fullName": "Chevron Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4a8.png?v8",
+    "volume": 5446229,
+    "marketCap": 1492833704348
+  },
+  {
+    "id": "e0675373-e819-4142-b8e5-438498c67239",
+    "symbol": "COP",
+    "type": "etf",
+    "fullName": "ConocoPhillips",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+    "volume": null,
+    "marketCap": null
+  },
+  {
+    "id": "64ad95d9-6048-44b5-9001-570a92fc74e7",
+    "symbol": "BP",
+    "type": "stock",
+    "fullName": "BP p.l.c.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+    "volume": 5997294,
+    "marketCap": 799457455061
+  },
+  {
+    "id": "ca37d9ef-ef2e-415b-8b10-05d6ef8e9da5",
+    "symbol": "SHEL",
+    "type": "stock",
+    "fullName": "Shell plc",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png?v8",
+    "volume": 1073765,
+    "marketCap": 870801303070
+  },
+  {
+    "id": "e7d5a4ab-1a09-418e-9106-626602370314",
+    "symbol": "ENPH",
+    "type": "stock",
+    "fullName": "Enphase Energy, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png?v8",
+    "volume": 3296804,
+    "marketCap": 1124737737809
+  },
+  {
+    "id": "dd2be7d7-d3c2-4619-bab3-17a454e66ec0",
+    "symbol": "SEDG",
+    "type": "stock",
+    "fullName": "SolarEdge Technologies, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png?v8",
+    "volume": 16148537,
+    "marketCap": 870708296633
+  },
+  {
+    "id": "3c0be915-d506-4501-b41d-d0d6951a1bee",
+    "symbol": "NEE",
+    "type": "stock",
+    "fullName": "NextEra Energy, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ae.png?v8",
+    "volume": 14305831,
+    "marketCap": 1844000447180
+  },
+  {
+    "id": "9c16adbc-db7e-4997-a554-858c6895a5a0",
+    "symbol": "DUK",
+    "type": "otc",
+    "fullName": "Duke Energy Corporation",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3e2.png?v8",
+    "volume": 44192,
+    "marketCap": 1093467740
+  },
+  {
+    "id": "0233a56b-8ba5-402d-a4fa-94992f3fd271",
+    "symbol": "SO",
+    "type": "etf",
+    "fullName": "The Southern Company",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f50b.png?v8",
+    "volume": 59142185,
+    "marketCap": 125823089218
+  },
+  {
+    "id": "26d5af76-12db-44d2-8522-9e008e0a77ca",
+    "symbol": "T",
+    "type": "stock",
+    "fullName": "AT&T Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png?v8",
+    "volume": 19152856,
+    "marketCap": 415160445210
+  },
+  {
+    "id": "0372673c-ec88-48a3-8034-8613f77006cf",
+    "symbol": "VZ",
+    "type": "otc",
+    "fullName": "Verizon Communications Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f48a.png?v8",
+    "volume": 151919,
+    "marketCap": 391556185
+  },
+  {
+    "id": "d8e13bc5-2066-4117-b81b-1e6b932ac991",
+    "symbol": "TMUS",
+    "type": "stock",
+    "fullName": "T-Mobile US, Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8",
+    "volume": 2843531,
+    "marketCap": 679884387248
+  },
+  {
+    "id": "9b86b695-d34a-44b0-a136-2d8d55461330",
+    "symbol": "V",
+    "type": "etf",
+    "fullName": "Visa Inc.",
+    "logo": "https://github.githubassets.com/images/icons/emoji/unicode/1f3d7.png?v8",
+    "volume": 22581685,
+    "marketCap": 162554973421
+  }
+]

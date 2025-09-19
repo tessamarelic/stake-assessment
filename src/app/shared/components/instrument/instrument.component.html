@@ -1,0 +1,15 @@
+<div class="instrument-container">
+  <div class="instrument-image" *ngIf="image">
+    <img [src]="image" [alt]="name">
+  </div>
+  <div class="instrument-info">
+    <div class="instrument-name">{{name}}</div>
+    <div class="instrument-symbol">{{symbol}}</div>
+  </div>
+  <div class="instrument-price">
+    <div class="price-value">{{price}}</div>
+    <div class="price-change" [ngClass]="{'positive': isPositive, 'negative': !isPositive}">
+      {{isPositive ? '+' : ''}}{{change}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.instrument-container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.instrument-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.instrument-info {
+  flex: 1;
+}
+
+.instrument-name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+.instrument-symbol {
+  font-size: 14px;
+  color: #666;
+}
+
+.instrument-price {
+  text-align: right;
+}
+
+.price-value {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.price-change {
+  font-size: 14px;
+  
+  &.positive {
+    color: #4CAF50;
+  }
+  
+  &.negative {
+    color: #F44336;
+  }
+}
