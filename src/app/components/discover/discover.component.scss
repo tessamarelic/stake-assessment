@@ -1,3 +1,9 @@
+.discover-container {
+  padding: 18px;
+  width: 100%;
+}
+
+
 ion-header {
   margin-bottom: 10px;
   
@@ -35,4 +41,39 @@ ion-fab-button {
   --background: var(--ion-color-primary);
   margin-bottom: 60px;
   margin-right: 16px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.card-item {
+  width: 80%;
+  margin: 10px;
+}
+
+.description-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.description-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.description-item ion-icon {
+  font-size: 16px;
+  color: #666;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 10px 0;
 }

@@ -1,14 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
+import { 
+  IonContent, 
+  IonHeader, 
+  IonTitle, 
+  IonItem,
+  IonLabel,
+  IonList,
+  IonListHeader,
+  IonGrid,
+  IonRow,
+  IonCol
+} from '@ionic/angular/standalone';
+import { CardComponent } from '../../shared/components/card/card.component';
+import { TypeComponent } from '../../shared/components/type/type.component';
+import { InstrumentComponent } from '../../shared/components/instrument/instrument.component';
 
 interface Card {
-  title: string;
-  subtitle: string;
-  icon: string;
-  amount: string;
-  percentage: string;
-  isPositive: boolean;
+  price: string;
+  fullname: string;
+  symbol: string;
+  logo: string;
+  type: string;
 }
 
 interface Type {
@@ -17,37 +31,65 @@ interface Type {
 }
 
 interface Instrument {
-  name: string;
+  totalShares: string;
   symbol: string;
   price: string;
   change: string;
   isPositive: boolean;
-  image: string;
 }
 
 @Component({
   selector: 'app-invest',
   templateUrl: './invest.component.html',
   styleUrls: ['./invest.component.scss'],
-  standalone: false
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    IonContent, 
+    IonHeader, 
+    IonTitle, 
+    IonItem,
+    IonLabel,
+    IonList,
+    IonListHeader,
+    IonGrid,
+    IonRow,
+    IonCol,
+    CardComponent,
+    TypeComponent,
+    InstrumentComponent
+  ]
 })
 export class InvestComponent implements OnInit {
   cards: Card[] = [
     {
-      title: 'Portfolio Value',
-      subtitle: 'Total balance',
-      icon: 'portfolio.svg',
-      amount: '$15,136.32',
-      percentage: '2.11%',
-      isPositive: true
+      price: '$131.04',
+      fullname: 'full name',
+      symbol: 'AAPL',
+      logo: '/assets/portfolio.svg',
+      type: 'Stocks',
     },
     {
-      title: 'Profit & Loss',
-      subtitle: 'Total P&L',
-      icon: 'circle-dollar.svg',
-      amount: '$1,236.12',
-      percentage: '8.21%',
-      isPositive: true
+      price: '$131.04',
+      fullname: 'full name',
+      symbol: 'AAPL',
+      logo: '/assets/portfolio.svg',
+      type: 'ETFs',
+    },
+    {
+      price: '$131.04',
+      fullname: 'full name',
+      symbol: 'AAPL',
+      logo: '/assets/portfolio.svg',
+      type: 'Bonds',
+    },
+    {
+      price: '$131.04',
+      fullname: 'full name',
+      symbol: 'AAPL',
+      logo: '/assets/portfolio.svg',
+      type: 'Crypto',
     }
   ];
 
@@ -61,28 +103,25 @@ export class InvestComponent implements OnInit {
 
   instruments: Instrument[] = [
     {
-      name: 'Apple Inc',
+      totalShares: '3.0282 shares',
       symbol: 'AAPL',
-      price: '$182.52',
-      change: '1.15%',
+      price: '$105.44',
+      change: '22.90%',
       isPositive: true,
-      image: 'https://logo.clearbit.com/apple.com'
     },
     {
-      name: 'Microsoft',
+      totalShares: '3.0282 shares',
       symbol: 'MSFT',
       price: '$334.12',
       change: '0.63%',
       isPositive: true,
-      image: 'https://logo.clearbit.com/microsoft.com'
     },
     {
-      name: 'Tesla',
+      totalShares: '3.0282 shares',
       symbol: 'TSLA',
       price: '$243.84',
       change: '2.38%',
       isPositive: false,
-      image: 'https://logo.clearbit.com/tesla.com'
     }
   ];
 
@@ -96,3 +135,4 @@ export class InvestComponent implements OnInit {
     });
   }
 }
+

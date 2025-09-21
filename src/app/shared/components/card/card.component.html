@@ -1,19 +1,14 @@
-<ion-card>
-  <ion-card-content>
-    <div class="card-content">
-      <div class="card-icon" *ngIf="icon">
-        <img [src]="'assets/' + icon" alt="Icon">
-      </div>
-      <div class="card-info">
-        <div class="card-title">{{title}}</div>
-        <div class="card-subtitle" *ngIf="subtitle">{{subtitle}}</div>
-      </div>
-      <div class="card-amount" *ngIf="amount">
-        {{amount}}
-        <span class="percentage" [ngClass]="{'positive': isPositive, 'negative': !isPositive}" *ngIf="percentage">
-          {{isPositive ? '+' : ''}}{{percentage}}
-        </span>
-      </div>
+<ion-card [class.card-compact]="layout === 'compact'" [class.card-full]="layout === 'full'">
+  <div class="banner">
+    <div><img alt="logo" src={{logo}} /></div>
+    <div class="type">
+    <app-type *ngIf="type" [type]="type"></app-type>
     </div>
+  </div>
+  <ion-card-content>
+    <div class="symbol">{{symbol}}</div>
+    <div class="name">{{fullname}}</div>
+    <div class="price">{{price}}</div>
+    <ng-container *ngTemplateOutlet="additionalContent || null"></ng-container>
   </ion-card-content>
 </ion-card>

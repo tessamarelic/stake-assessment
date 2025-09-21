@@ -1,15 +1,24 @@
 <div class="instrument-container">
-  <div class="instrument-image" *ngIf="image">
-    <img [src]="image" [alt]="name">
-  </div>
-  <div class="instrument-info">
-    <div class="instrument-name">{{name}}</div>
-    <div class="instrument-symbol">{{symbol}}</div>
-  </div>
-  <div class="instrument-price">
-    <div class="price-value">{{price}}</div>
-    <div class="price-change" [ngClass]="{'positive': isPositive, 'negative': !isPositive}">
-      {{isPositive ? '+' : ''}}{{change}}
-    </div>
-  </div>
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <!-- Left column -->
+      <ion-col size="6" size-md="6">
+        <div class="instrument-info">
+          <div class="instrument-name">{{ name || symbol }}</div>
+          <div class="instrument-shares" *ngIf="totalShares">{{ totalShares }}</div>
+          <div class="instrument-symbol" *ngIf="name && symbol">{{ symbol }}</div>
+        </div>
+      </ion-col>
+
+      <!-- Right column -->
+      <ion-col size="6" size-md="6" class="ion-text-right">
+        <div class="right-content">
+          <div class="price">{{ price }}</div>
+          <div class="percent-change" [ngClass]="{'positive': isPositive, 'negative': !isPositive}">
+            {{ isPositive ? '+' : '' }}{{ change }}
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </div>

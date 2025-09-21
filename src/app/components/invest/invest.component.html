@@ -1,59 +1,73 @@
-<ion-content>
-  <ion-header class="ion-padding">
-    <ion-title size="large">Investments</ion-title>
-  </ion-header>
 
+<ion-content [fullscreen]="true">
+<div class="investments">
+
+  <ion-item lines="none">
+    <ion-label>
+      <div class="heading-1">Dashboard</div>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>
+      <div class="l3">Total equity</div>
+      <div class="heading-1">$8,036</div>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>
+    <div class="sh2">Holdings</div>
+    </ion-label>
+  </ion-item>
+  
   <ion-grid>
-    <ion-row>
-      <ion-col size="12" *ngFor="let card of cards">
-        <app-card 
-          [title]="card.title" 
-          [subtitle]="card.subtitle" 
-          [icon]="card.icon" 
-          [amount]="card.amount" 
-          [percentage]="card.percentage" 
-          [isPositive]="card.isPositive">
-        </app-card>
+    <ion-row class="ion-align-items-center heading-b4">
+      <!-- Left column -->
+      <ion-col size="6" size-md="6">
+        Stock
+      </ion-col>
+
+      <!-- Right column -->
+      <ion-col size="6" size-md="6" class="ion-text-right">
+        <div class="right-content">
+          <div class="ion-text-right price">Price</div>
+          <div class="ion-text-right change">Change</div>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <div class="types-container ion-padding-horizontal">
-    <div *ngFor="let type of types; let i = index" (click)="selectType(i)">
-      <app-type [name]="type.name" [selected]="type.selected"></app-type>
+  <ion-item *ngFor="let instrument of instruments" lines="none" class="instrument-item">
+    <app-instrument
+      [totalShares]="instrument.totalShares"
+      [symbol]="instrument.symbol"
+      [price]="instrument.price"
+      [change]="instrument.change"
+      [isPositive]="instrument.isPositive">
+    </app-instrument>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>
+    <div class="sh2 margin-top-18">Trending stocks</div>
+    </ion-label>
+  </ion-item>
+
+  <div class="cards-scroll-container">
+    <div class="cards-inner-container">
+      <div class="card-item" *ngFor="let card of cards">
+        <app-card 
+          [price]="card.price" 
+          [symbol]="card.symbol" 
+          [logo]="card.logo" 
+          [fullname]="card.fullname" 
+          [type]="card.type"
+          layout="compact">
+        </app-card>
+      </div>
     </div>
   </div>
 
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Your Investments</ion-label>
-    </ion-list-header>
-    <ion-item *ngFor="let instrument of instruments" lines="full">
-      <app-instrument
-        [name]="instrument.name"
-        [symbol]="instrument.symbol"
-        [price]="instrument.price"
-        [change]="instrument.change"
-        [isPositive]="instrument.isPositive"
-        [image]="instrument.image">
-      </app-instrument>
-    </ion-item>
-  </ion-list>
-
-  <ion-footer>
-    <ion-toolbar>
-      <ion-tabs>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="investments" selected>
-            <ion-icon name="wallet-outline"></ion-icon>
-            <ion-label>Investments</ion-label>
-          </ion-tab-button>
-          <ion-tab-button tab="discover" routerLink="/discover">
-            <ion-icon name="search-outline"></ion-icon>
-            <ion-label>Discover</ion-label>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-    </ion-toolbar>
-  </ion-footer>
+</div>
 </ion-content>

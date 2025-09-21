@@ -1,0 +1,13 @@
+.tab-selected {
+  color: var(--ion-color-primary);
+  font-weight: bold;
+  
+  ion-icon {
+    color: var(--ion-color-primary);
+  }
+}
+
+/* Optional: Change the background color for the selected tab */
+ion-tab-button.tab-selected {
+  border-top: 2px solid var(--ion-color-primary);
+}

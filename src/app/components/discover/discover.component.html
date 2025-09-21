@@ -1,68 +1,64 @@
-<ion-content>
-  <ion-header class="ion-padding">
-    <div class="search-container">
-      <ion-searchbar placeholder="Search instruments"></ion-searchbar>
+<ng-template #additionalContent>
+  <hr class="divider" />
+  <div class="description-row">
+    <div class="description-item">
+      <ion-icon name="circleDollar"></ion-icon>
+      <span>$36.9m</span>
     </div>
-    <ion-title size="large">Discover</ion-title>
-  </ion-header>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col size="12" *ngFor="let card of cards">
-        <app-card 
-          [title]="card.title" 
-          [subtitle]="card.subtitle" 
-          [icon]="card.icon" 
-          [amount]="card.amount" 
-          [percentage]="card.percentage" 
-          [isPositive]="card.isPositive">
-        </app-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <div class="types-container ion-padding-horizontal">
-    <div *ngFor="let type of types; let i = index" (click)="selectType(i)">
-      <app-type [name]="type.name" [selected]="type.selected"></app-type>
+    <div class="description-item">
+      <ion-icon name="target"></ion-icon>
+      <span>$1.2b</span>
+    </div>
+    <div class="description-item">
+      <ion-icon name="squareDollar"></ion-icon>
+      <span>$30–32</span>
     </div>
   </div>
+</ng-template>
 
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Trending</ion-label>
-    </ion-list-header>
-    <ion-item *ngFor="let instrument of instruments" lines="full">
-      <app-instrument
-        [name]="instrument.name"
-        [symbol]="instrument.symbol"
-        [price]="instrument.price"
-        [change]="instrument.change"
-        [isPositive]="instrument.isPositive"
-        [image]="instrument.image">
-      </app-instrument>
+<ion-header class="margin-top-10">
+  <ion-toolbar>
+    <ion-searchbar [debounce]="1000" (ionInput)="handleInput($event)" placeholder="Search"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="discover-container">
+    <ion-item lines="none">
+      <ion-label>
+        <div class="sh2">Recently searched</div>
+      </ion-label>
     </ion-item>
-  </ion-list>
+    <ion-list>
+      @for (result of results; track result) {
+      <ion-item lines="none">
+        <app-search-instrument
+          [name]="result.name"
+          [symbol]="result.symbol"
+          [price]="result.price"
+          [description]="'description needs to be added'"/>
+      </ion-item>
+      }
+    </ion-list>
+    <ion-item lines="none">
+      <ion-label>
+        <div class="sh2">Top 3 volume stock</div>
+      </ion-label>
+    </ion-item>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="add-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <ion-footer>
-    <ion-toolbar>
-      <ion-tabs>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="investments" routerLink="/investments">
-            <ion-icon name="wallet-outline"></ion-icon>
-            <ion-label>Investments</ion-label>
-          </ion-tab-button>
-          <ion-tab-button tab="discover" selected>
-            <ion-icon name="search-outline"></ion-icon>
-            <ion-label>Discover</ion-label>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-    </ion-toolbar>
-  </ion-footer>
+      <div class="card-item" *ngFor="let card of cards">
+        <app-card 
+          [price]="card.price" 
+          [symbol]="card.symbol" 
+          [logo]="card.logo" 
+          [fullname]="card.fullname" 
+          [type]="card.type"
+          layout="full"
+          [additionalContent]="additionalContent">
+        </app-card>
+      </div>
+  </div>
 </ion-content>
+
+
+

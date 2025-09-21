@@ -1,0 +1,25 @@
+.instrument-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+
+.price {
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.instrument-shares, .instrument-symbol {
+    font-size: 12px;
+    color: #888;
+  }
+
+.instrument-name {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+

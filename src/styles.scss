@@ -1,9 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Using Inter font as a temporary alternative to Universal Sans */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
 :root {
   --ion-color-primary: #007bff;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #141414;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sh2 {
+  font-size: 18px;
+  font-weight: 600;
 }

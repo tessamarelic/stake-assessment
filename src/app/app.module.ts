@@ -2,21 +2,27 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { IonicRouteStrategy } from '@ionic/angular';
+import { ApplicationConfig } from '@angular/core';
+import { importProvidersFrom } from '@angular/core';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+// Import components
+import { TabsComponent } from './shared/components/tabs/tabs.component';
+import { InvestComponent } from './components/invest/invest.component';
+import { DiscoverComponent } from './components/discover/discover.component';
 
 @NgModule({
   declarations: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot(),
-    // Removed AppComponent from imports as it is a standalone component
+    // Register standalone components
+    TabsComponent,
+    InvestComponent,
+    DiscoverComponent
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
-  // Removed bootstrap array as AppComponent is a standalone component
+  ]
 })
 export class AppModule { }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from "@ionic/angular/standalone";
+import { addIcons } from 'ionicons';
+import { search, addOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +11,17 @@ import { IonApp, IonRouterOutlet } from "@ionic/angular/standalone";
   imports: [IonApp, IonRouterOutlet]
 })
 export class AppComponent {
-  title = 'Investment App';
+  title = 'Stake';
+
+  constructor() { 
+    addIcons({ 
+      search: search,
+      addOutline: addOutline,
+      buyChevrons: '/assets/buy-chevrons.svg',
+      circleDollar: '/assets/circle-dollar.svg',
+      portfolio: '/assets/portfolio.svg',
+      squareDollar: '/assets/square-dollar.svg',
+      target: '/assets/target.svg'
+    });
+  }
 }
