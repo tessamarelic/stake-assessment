@@ -3,18 +3,6 @@
   width: 100%;
 }
 
-ion-header {
-  margin-bottom: 10px;
-  
-  ion-title {
-    font-weight: 800;
-    font-size: 22px;
-    text-align: left;
-    padding-top: 4px;
-    margin-bottom: 18px;
-  }
-}
-
 .l3 {
   font-size: 12px;
   font-weight: 500;
@@ -27,54 +15,37 @@ ion-header {
   margin-bottom: 18px;
 }
 
-
-
-
-.types-container {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  margin: 10px 0;
-}
-
-ion-list-header {
-  font-weight: 600;
-  font-size: 18px;
-  padding-left: 16px;
-}
-
 .cards-scroll-container {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
   scroll-snap-type: x mandatory;
-  scroll-padding: 16px; // Optional: adds padding to the start of the scroll
+  scroll-padding: 16px;
   
   &::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome/Safari/Opera */
+    display: none;
   }
 }
   
 .cards-inner-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 12px;               /* modern way to space items */
-  padding: 0 16px;         /* nice padding on both sides */
-  width: max-content;      /* shrink to fit cards instead of stretching */
+  gap: 12px;
+  padding: 0 16px;
+  width: max-content;
 }
 
 @media (min-width: 768px) {
   .card-item {
-    flex: 0 0 25%;  /* 4 cards per row on tablets */
+    flex: 0 0 25%;
   }
 }
 
 @media (min-width: 1024px) {
   .card-item {
-    flex: 0 0 20%;  /* 5 cards per row on desktop */
+    flex: 0 0 20%;
   }
 }
 
@@ -82,7 +53,7 @@ ion-list-header {
   --inner-padding-start: 0;
   --inner-padding-end: 0;
   --padding-start: 0;
-  --padding-end: 0;
+  --padding-end: 18px;
   width: 100%;
 }
 
@@ -106,12 +77,8 @@ ion-list-header {
   color: #888;
 }
 
-.margin-bottom-8 {
-  margin-bottom: 8px;
-}
-
-.margin-top-8 {
-  margin-top: 8px;
+.margin-left-6 {
+  margin-left: 6px;
 }
 
 .margin-top-18 {

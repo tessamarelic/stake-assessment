@@ -11,11 +11,6 @@ ion-card-content {
   padding: 0;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
 .card-compact {
   min-width: 113px;
   max-width: 202px;
@@ -26,94 +21,18 @@ ion-card-content {
   width: 100%;
 }
 
-.card-header {
+.banner {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 8px;
-}
-
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
-  margin-right: 12px;
-}
-
-.title-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.subtitle {
-  font-size: 12px;
-  color: #888;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.amount {
-  font-size: 16px;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-
-.percentage {
-  font-size: 12px;
-}
-
-.positive {
-  color: #00C853;
-}
-
-.negative {
-  color: #FF3D00;
-}
-
-.divider {
-  margin: 12px 0;
-  border: 0;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.additional-content {
-  font-size: 13px;
-  line-height: 1.4;
-  color: #333;
-}
-
-:host {
-  display: block;
+  justify-content: space-between;
   width: 100%;
-}
-
-.price {
-  font-weight: 700;
-  font-size: 16px;
-  margin-top: 8px;
-}
-
-.name {
-  font-weight: 300;
-  font-size: 12px;
-  margin-bottom: 4px;
-  color: #555;
-}
-
-.margin-bottom-8 {
   margin-bottom: 8px;
+}
+
+.banner img {
+  height: 20px;
+  width: auto;
 }
 
 .symbol {
@@ -123,22 +42,20 @@ ion-card-content {
   text-transform: uppercase;
 }
 
-.banner {
-  display: flex;
-  flex-direction: row;   /* changed from column */
-  align-items: center;
-  justify-content: space-between;
+.name {
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+:host {
+  display: block;
   width: 100%;
-  margin-bottom: 8px;
-}
-
-.banner img {
-  height: 20px;   /* keeps logo compact */
-  width: auto;
-}
-
-:host(.small-chip) ion-chip.type-chip {
-  font-size: 9px;
-  height: 18px;
-  padding: 0 4px;
 }

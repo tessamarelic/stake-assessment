@@ -1,17 +1,11 @@
 .instrument-container {
-    padding: 0; /* or whatever spacing you want */
     width: 100%;     /* ensure it stretches full width */
     box-sizing: border-box;
+    padding: 0 20px 0 5px;
   
     ion-grid, ion-row {
       width: 100% !important; /* force full width */
     }
-  
-  .full-width-row {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-  }
 }
 
 .instrument-info {
@@ -40,7 +34,6 @@
   font-weight: 500;
   font-size: 14px;
   white-space: nowrap;
-  margin-right: 10px;
   text-align: right;
 }
 
@@ -53,7 +46,6 @@
   padding: 2px 6px;
   min-width: 60px;
   display: inline-block;
-  margin-left: 2px;
   
   &.positive {
     background-color: rgb(33,182,146);

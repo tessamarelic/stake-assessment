@@ -1,21 +1,7 @@
-.type-chip {
-  // display: inline-block;
-  
-  
-  &.selected {
-    background-color: var(--ion-color-primary);
-    color: white;
-  }
-  
-  &:hover:not(.selected) {
-    background-color: #e0e0e0;
-  }
-}
-
 ion-chip.type-chip {
-  font-size: 10px;      /* smaller text */
-  height: 10px;         /* smaller height */
-  padding: 0 10px;       /* tighter padding */
+  font-size: 10px;
+  height: 6px;  
+  padding: 0 15px;
   --background: var(--ion-color-light);
   --color: var(--ion-color-dark);
 }

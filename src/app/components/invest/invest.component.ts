@@ -1,42 +1,23 @@
-import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, DestroyRef, inject, OnDestroy, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { 
-  IonContent, 
-  IonHeader, 
-  IonTitle, 
+import {
+  IonCol,
+  IonContent,
+  IonGrid,
   IonItem,
   IonLabel,
-  IonList,
-  IonListHeader,
-  IonGrid,
-  IonRow,
-  IonCol
+  IonRow
 } from '@ionic/angular/standalone';
+import { Subject } from 'rxjs';
+import { map, mergeMap, takeUntil } from 'rxjs/operators';
+import { Card } from 'src/app/models/card.model';
+import { Holding } from 'src/app/models/holding.model';
 import { CardComponent } from '../../shared/components/card/card.component';
-import { TypeComponent } from '../../shared/components/type/type.component';
 import { InstrumentComponent } from '../../shared/components/instrument/instrument.component';
-
-interface Card {
-  price: string;
-  fullname: string;
-  symbol: string;
-  logo: string;
-  type: string;
-}
-
-interface Type {
-  name: string;
-  selected: boolean;
-}
-
-interface Instrument {
-  totalShares: string;
-  symbol: string;
-  price: string;
-  change: string;
-  isPositive: boolean;
-}
+import { DetailsService } from '../../services/details.service';
+import { HoldingsService } from '../../services/holdings.service';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-invest',
@@ -45,94 +26,67 @@ interface Instrument {
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule,
-    IonContent, 
-    IonHeader, 
-    IonTitle, 
-    IonItem,
-    IonLabel,
-    IonList,
-    IonListHeader,
-    IonGrid,
-    IonRow,
-    IonCol,
+    IonicModule,
     CardComponent,
-    TypeComponent,
     InstrumentComponent
   ]
 })
-export class InvestComponent implements OnInit {
-  cards: Card[] = [
-    {
-      price: '$131.04',
-      fullname: 'full name',
-      symbol: 'AAPL',
-      logo: '/assets/portfolio.svg',
-      type: 'Stocks',
-    },
-    {
-      price: '$131.04',
-      fullname: 'full name',
-      symbol: 'AAPL',
-      logo: '/assets/portfolio.svg',
-      type: 'ETFs',
-    },
-    {
-      price: '$131.04',
-      fullname: 'full name',
-      symbol: 'AAPL',
-      logo: '/assets/portfolio.svg',
-      type: 'Bonds',
-    },
-    {
-      price: '$131.04',
-      fullname: 'full name',
-      symbol: 'AAPL',
-      logo: '/assets/portfolio.svg',
-      type: 'Crypto',
-    }
-  ];
+export class InvestComponent implements OnInit, OnDestroy {
 
-  types: Type[] = [
-    { name: 'All', selected: true },
-    { name: 'Stocks', selected: false },
-    { name: 'ETFs', selected: false },
-    { name: 'Bonds', selected: false },
-    { name: 'Crypto', selected: false }
-  ];
+  holdingsService = inject(HoldingsService);
+  detailsService = inject(DetailsService);
+  private destroyRef = inject(DestroyRef);
+  private destroy$ = new Subject<void>();
 
-  instruments: Instrument[] = [
-    {
-      totalShares: '3.0282 shares',
-      symbol: 'AAPL',
-      price: '$105.44',
-      change: '22.90%',
-      isPositive: true,
-    },
-    {
-      totalShares: '3.0282 shares',
-      symbol: 'MSFT',
-      price: '$334.12',
-      change: '0.63%',
-      isPositive: true,
-    },
-    {
-      totalShares: '3.0282 shares',
-      symbol: 'TSLA',
-      price: '$243.84',
-      change: '2.38%',
-      isPositive: false,
-    }
-  ];
+  cards: Card[] = [];
+  holdings: Holding[] = [];
 
-  constructor() { }
-
-  ngOnInit() {}
-
-  selectType(index: number) {
-    this.types.forEach((type, i) => {
-      type.selected = i === index;
+  constructor() {
+    this.destroyRef.onDestroy(() => {
+      this.destroy$.next();
+      this.destroy$.complete();
     });
   }
-}
 
+  ngOnInit() {
+    this.getHoldings();
+    this.getCards();
+  }
+
+  ngOnDestroy() {
+    // The cleanup is now handled by the destroyRef in the constructor
+  }
+
+  getHoldings(): void {
+    this.holdingsService.fetchHoldings().pipe(
+      takeUntil(this.destroy$),
+      mergeMap(holdings => {
+        return this.holdingsService.fetchPricing().pipe(
+          map(pricing => {
+            this.holdings = this.holdingsService.mapHoldingsWithPricing(holdings, pricing);
+            return this.holdings;
+          })
+        );
+      })
+    ).subscribe({
+      error: (err) => console.error('Error fetching holdings:', err)
+    });
+  }
+
+  getCards(): void {
+    this.detailsService.fetchDetails().pipe(
+      takeUntil(this.destroy$),
+      mergeMap(details => {
+        return this.holdingsService.fetchPricing().pipe(
+          map(pricing => {
+            this.cards = this.detailsService.mapDetailsWithPricing(details, pricing);
+            return this.cards;
+          })
+        );
+      })
+    ).subscribe({
+      error: (err) => console.error('Error fetching cards:', err)
+    });
+  }
+
+}

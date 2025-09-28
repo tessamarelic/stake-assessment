@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, TemplateRef, Type } from '@angular/core';
+import { Component, Input, OnInit, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonCard, IonCardContent, IonIcon, IonThumbnail } from '@ionic/angular/standalone';
+import { IonCard, IonCardContent } from '@ionic/angular/standalone';
 import { TypeComponent } from '../type/type.component';
 
 @Component({
@@ -8,7 +8,7 @@ import { TypeComponent } from '../type/type.component';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
   standalone: true,
-  imports: [CommonModule, IonCard, IonCardContent, IonIcon, IonThumbnail, TypeComponent]
+  imports: [CommonModule, IonCard, IonCardContent, TypeComponent]
 })
 export class CardComponent implements OnInit {
   @Input() symbol: string = '';
@@ -23,6 +23,5 @@ export class CardComponent implements OnInit {
   constructor() { }
   
   ngOnInit() { 
-    console.log(this.logo);
   }
 }

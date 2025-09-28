@@ -23,3 +23,9 @@
     margin-bottom: 2px;
 }
 
+.instrument-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+

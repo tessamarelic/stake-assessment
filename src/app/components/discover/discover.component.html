@@ -1,64 +1,86 @@
-<ng-template #additionalContent>
-  <hr class="divider" />
-  <div class="description-row">
-    <div class="description-item">
-      <ion-icon name="circleDollar"></ion-icon>
-      <span>$36.9m</span>
-    </div>
-    <div class="description-item">
-      <ion-icon name="target"></ion-icon>
-      <span>$1.2b</span>
-    </div>
-    <div class="description-item">
-      <ion-icon name="squareDollar"></ion-icon>
-      <span>$30–32</span>
-    </div>
-  </div>
-</ng-template>
+<div class="ion-page">
+  <ion-content [fullscreen]="true">
 
-<ion-header class="margin-top-10">
-  <ion-toolbar>
-    <ion-searchbar [debounce]="1000" (ionInput)="handleInput($event)" placeholder="Search"></ion-searchbar>
-  </ion-toolbar>
-</ion-header>
+    <ion-searchbar 
+      [debounce]="300" 
+      (ionInput)="handleInput($event)"    
+      inputmode="text"   
+      placeholder="Search">
+    </ion-searchbar>
 
-<ion-content>
+  <!-- Search results -->
+  <ion-list *ngIf="results.length > 0">
+    @for (result of results; track result) {
+      <ion-item lines="none">
+        <app-search-instrument
+          [name]="result.name"
+          [symbol]="result.symbol"
+          [price]="result.price"
+          [description]="'description needs to be added'">
+        </app-search-instrument>
+      </ion-item>
+    }
+  </ion-list>
+
   <div class="discover-container">
+
+    <!-- Recently searched -->
     <ion-item lines="none">
       <ion-label>
         <div class="sh2">Recently searched</div>
       </ion-label>
     </ion-item>
     <ion-list>
-      @for (result of results; track result) {
-      <ion-item lines="none">
-        <app-search-instrument
-          [name]="result.name"
-          [symbol]="result.symbol"
-          [price]="result.price"
-          [description]="'description needs to be added'"/>
-      </ion-item>
+      @for (result of recentlySearched; track result) {
+        <ion-item lines="none">
+          <app-search-instrument
+            [name]="result.name"
+            [symbol]="result.symbol"
+            [price]="result.price"
+            [description]="'description needs to be added'">
+          </app-search-instrument>
+        </ion-item>
       }
     </ion-list>
+
+    <!-- Top 3 volume stock -->
     <ion-item lines="none">
       <ion-label>
         <div class="sh2">Top 3 volume stock</div>
       </ion-label>
     </ion-item>
 
-      <div class="card-item" *ngFor="let card of cards">
-        <app-card 
-          [price]="card.price" 
-          [symbol]="card.symbol" 
-          [logo]="card.logo" 
-          [fullname]="card.fullname" 
-          [type]="card.type"
-          layout="full"
-          [additionalContent]="additionalContent">
-        </app-card>
-      </div>
+    <div class="card-item" *ngFor="let card of cards">
+      <app-card 
+        [price]="card.price" 
+        [symbol]="card.symbol" 
+        [logo]="card.logo" 
+        [fullname]="card.fullname" 
+        [type]="card.type"
+        layout="full"
+        [additionalContent]="additionalContent">
+      </app-card>
+    </div>
+
   </div>
-</ion-content>
 
-
-
+  <!-- Template for extra card content -->
+    <ng-template #additionalContent>
+      <hr class="divider" />
+      <div class="description-row">
+        <div class="description-item">
+          <ion-icon name="cash-outline"></ion-icon>
+          <span>$36.9m</span>
+        </div>
+        <div class="description-item">
+          <ion-icon name="trending-up-outline"></ion-icon>
+          <span>$1.2b</span>
+        </div>
+        <div class="description-item">
+          <ion-icon name="pricetag-outline"></ion-icon>
+          <span>$30–32</span>
+        </div>
+      </div>
+    </ng-template>
+  </ion-content>
+</div>
