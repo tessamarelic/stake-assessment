@@ -31,15 +31,16 @@ import { IonicModule } from '@ionic/angular';
     InstrumentComponent
   ]
 })
-export class InvestComponent implements OnInit, OnDestroy {
+export class InvestComponent implements OnInit {
 
   holdingsService = inject(HoldingsService);
   detailsService = inject(DetailsService);
-  private destroyRef = inject(DestroyRef);
-  private destroy$ = new Subject<void>();
 
   cards: Card[] = [];
   holdings: Holding[] = [];
+
+  private destroyRef = inject(DestroyRef);
+  private destroy$ = new Subject<void>();
 
   constructor() {
     this.destroyRef.onDestroy(() => {
@@ -53,14 +54,11 @@ export class InvestComponent implements OnInit, OnDestroy {
     this.getCards();
   }
 
-  ngOnDestroy() {
-    // The cleanup is now handled by the destroyRef in the constructor
-  }
-
   getHoldings(): void {
     this.holdingsService.fetchHoldings().pipe(
       takeUntil(this.destroy$),
       mergeMap(holdings => {
+        // get prices for holdings from price api
         return this.holdingsService.fetchPricing().pipe(
           map(pricing => {
             this.holdings = this.holdingsService.mapHoldingsWithPricing(holdings, pricing);

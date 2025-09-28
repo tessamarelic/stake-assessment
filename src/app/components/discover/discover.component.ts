@@ -41,7 +41,6 @@ export class DiscoverComponent implements OnInit {
   cards: Card[] = [];
   shares: Share[] = [];
   results: Share[] = [];
-  topVolumeStock: Card[] = [];
   recentlySearched: Share[] = []
  
   private destroyRef = inject(DestroyRef);
@@ -62,12 +61,15 @@ export class DiscoverComponent implements OnInit {
       this.detailsService.fetchDetails().pipe(
         takeUntil(this.destroy$),
         mergeMap(details => {
+          // store 3 top volume stocks to display
           const topVolumeStocks = details.sort((a, b) => b.volume - a.volume).slice(0, 3);
           return this.holdingsService.fetchPricing().pipe(
             map(pricing => {
               const allShares = this.detailsService.mapDetailsWithPricing(details, pricing);         
               this.shares = this.detailsService.fetchShares(allShares);
-              this.recentlySearched = [...this.shares.slice(0, 3)];
+
+              // TODO - search is not allowing any input so get first 3 from shares array, remove once search input is working
+              this.recentlySearched = [...this.shares.slice(0, 3)]; 
               this.cards = this.detailsService.mapDetailsWithPricing(topVolumeStocks, pricing);
             })
           );
@@ -78,7 +80,6 @@ export class DiscoverComponent implements OnInit {
     }
 
   handleInput($event: Event) {
-    console.log($event);
     if ($event.target) {
       const target = $event.target as HTMLIonSearchbarElement;
       const query = target.value?.toLowerCase() || '';

@@ -6,7 +6,8 @@ import {
   IonTabButton, 
   IonIcon,
   IonLabel,
-  IonRouterOutlet
+  IonRouterOutlet,
+  IonRouterLink
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -19,7 +20,7 @@ import {
     IonTabButton,
     IonIcon,
     IonLabel,
-    IonRouterOutlet
+    IonRouterOutlet,
   ],
   templateUrl: './tabs.component.html',
   styleUrl: './tabs.component.scss',
