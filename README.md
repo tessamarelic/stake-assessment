@@ -26,6 +26,6 @@ Created services for the data sources and retrieved data using http request to s
 
 I am new to Ionic and did not have time to do the animation.
 
-I am using standalone components so the application is light weight and ready for upgrades to use Signals and zoneless.
+I am using standalone components so the application is lite weight and ready for upgrading to use Signals and zoneless.
 
 The navigation set up seems correct going by Ionic documenation, but doesn't navigate back to Invest page, ran out of time to debug this.
